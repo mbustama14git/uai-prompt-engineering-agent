@@ -17,7 +17,7 @@ except Exception:
 
 
 # -----------------------------
-# Prompt template (CLARO)
+# Template Prompt 
 # -----------------------------
 SYSTEM_PROMPT_ES = """\
 Eres un asistente técnico senior de metalurgia y procesamiento de minerales en una planta concentradora.
@@ -43,7 +43,7 @@ RESPUESTA:
 
 
 # -----------------------------
-# Configuración "modo curso"
+# Configuración
 # -----------------------------
 DEFAULT_TOP_K = 3
 DEFAULT_MAX_CHARS_PER_DOC = 2000
@@ -182,7 +182,7 @@ def generate_text(
     """
     Función principal para tu endpoint /messages.
 
-    - prompt: tu string (ej "pregunta: ..."). Para claridad, aquí lo tratamos como pregunta.
+    - prompt: string (ej "pregunta: ..."). Para claridad, aquí lo tratamos como pregunta.
     - chat_id: id conversación (lo dejamos por compatibilidad)
     - use_llm:
         - None => auto (si hay gpt_key usa LLM, si no, modo SIN LLM)

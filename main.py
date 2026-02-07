@@ -1,8 +1,7 @@
 # main.py
-# FastAPI app v2: incluye /search y /rag_debug (Chroma local) + tu endpoint /messages
-# - Mantiene tu estructura actual
-# - No revienta si no tienes gpt_key: /messages funcionará igual si tu generate_text no depende de OpenAI
-#   (si tu generate_text usa OpenAI, puedes comentarlo o manejar el error dentro de generate_text)
+# FastAPI: incluye /search y /rag_debug (Chroma local) + endpoint /messages
+# - No revienta si no hay gpt_key: /messages funcionará igual si el generate_text no depende de OpenAI
+
 
 from openai import OpenAI
 import uvicorn
@@ -18,9 +17,9 @@ from ai.chat import generate_text
 from bd.chroma_store import search as chroma_search
 
 # -------------------------
-# OpenAI client (opcional)
+# OpenAI client
 # -------------------------
-# Si no tienes gpt_key, deja config.gpt_key vacío y no se usará acá directamente.
+# Si no hay gpt_key, dejar config.gpt_key vacío y no se usará acá directamente.
 client = OpenAI(api_key=getattr(config, "gpt_key", None))
 
 app = FastAPI()
@@ -47,7 +46,7 @@ def health():
     return {"status": "ok"}
 
 # -------------------------
-# NEW: Retrieval endpoints
+# Retrieval endpoints
 # -------------------------
 @app.post("/search")
 def search_endpoint(payload: dict = Body(...)):
@@ -88,7 +87,7 @@ def rag_debug_endpoint(payload: dict = Body(...)):
 
     Salida incluye:
     - hits (top-k)
-    - context (texto concatenado para RAG, útil para modo curso)
+    - context (texto concatenado para RAG, útil para modo)
     """
     query = payload.get("query", "")
     top_k = int(payload.get("top_k", 3))
@@ -123,7 +122,7 @@ def rag_debug_endpoint(payload: dict = Body(...)):
         return JSONResponse(status_code=500, content={"error": f"Error en /rag_debug: {str(e)}"})
 
 # -------------------------
-# Existing: Messages endpoint
+# Messages endpoint
 # -------------------------
 @app.post("/messages")
 def messages(payload: dict = Body(...)):
@@ -144,7 +143,7 @@ def messages(payload: dict = Body(...)):
 
         prompt = f"pregunta: {message}"
 
-        # Tu función actual (puede o no usar OpenAI internamente)
+        # Función puede o no usar OpenAI internamente
         response = generate_text(prompt, chat_id)
 
         return {"response": response}

@@ -17,7 +17,7 @@ embedding_fn = SentenceTransformerEmbeddingFunction(
     model_name="BAAI/bge-large-en-v1.5"
 )
 
-# 👇 ESTA es la forma persistente recomendada
+# ESTA es la forma persistente recomendada
 _client = chromadb.PersistentClient(path=CHROMA_DIR)
 
 _collection = _client.get_or_create_collection(
