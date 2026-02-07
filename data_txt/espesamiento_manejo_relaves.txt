@@ -1,0 +1,19 @@
+ESPESAMIENTO DE RELAVES Y MANEJO DE AGUA DE PROCESO
+
+El espesamiento de relaves cumple un rol fundamental en la recuperación de agua de proceso y en la estabilidad del sistema de disposición de relaves.
+
+Los espesadores de alta capacidad operan controlando principalmente:
+- Torque del rastrillo
+- Altura del manto de lodos
+- Densidad de descarga (% sólidos)
+- Dosificación de floculante
+- Claridad del rebose
+
+Un incremento del torque puede indicar:
+- Aumento en la tasa de alimentación de sólidos
+- Floculación deficiente
+- Compactación excesiva del underflow
+
+La operación estable busca maximizar la densidad del underflow sin comprometer la integridad mecánica del espesador. Valores típicos de descarga se sitúan entre 60% y 68% de sólidos, dependiendo del tipo de relave.
+
+La correcta gestión del agua recuperada impacta directamente el balance hídrico de la planta, reduciendo el consumo de agua fresca y mejorando la sostenibilidad del proceso.

@@ -1,0 +1,9 @@
+import openai
+from openai import OpenAI
+
+gpt_key="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"
+
+
+client = OpenAI(api_key=gpt_key)
+
+print()

@@ -1,0 +1,21 @@
+CONTROL OPERACIONAL DE MOLIENDA SAG EN PLANTAS CONCENTRADORAS
+
+La molienda SAG (Semi-Autogenous Grinding) es una etapa crítica en plantas concentradoras de cobre, ya que define la granulometría de alimentación a los molinos de bolas y, por ende, el desempeño global de la flotación.
+
+Variables clave de control:
+- Potencia del molino SAG (MW)
+- Tonelaje de alimentación fresca (t/h)
+- Nivel de llenado total y fracción de bolas (Jb)
+- Tamaño de alimentación F80
+- Presión y caudal de agua de proceso
+- Torque del molino
+
+Un aumento sostenido de la potencia específica (kWh/t) suele estar asociado a un incremento del tamaño de alimentación o a una disminución de la eficiencia de molienda, lo cual puede deberse a desgaste de revestimientos o cambios en la dureza del mineral (DWi).
+
+La estrategia de control recomendada considera:
+1. Mantener el tonelaje cerca del límite de potencia, evitando sobrecargas.
+2. Ajustar la adición de agua para controlar el tamaño de descarga (P80).
+3. Monitorear la fracción de bolas (Jb), idealmente entre 10% y 14%, dependiendo del diseño del molino.
+4. Evaluar tendencias de torque como indicador temprano de acumulación de carga.
+
+Desviaciones prolongadas en estas variables impactan directamente la eficiencia de clasificación en ciclones y la estabilidad del circuito de molienda secundaria.

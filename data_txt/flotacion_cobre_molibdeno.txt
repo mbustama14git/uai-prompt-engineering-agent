@@ -1,0 +1,20 @@
+FLOTACIÓN DE COBRE Y MOLIBDENO: ASPECTOS OPERACIONALES CLAVE
+
+La flotación es el proceso central de concentración de sulfuros de cobre y molibdeno. Su desempeño depende tanto de la liberación mineralógica lograda en molienda como de la correcta dosificación de reactivos.
+
+En circuitos rougher-scavenger, las variables más relevantes incluyen:
+- Densidad de pulpa (% sólidos)
+- pH del sistema
+- Dosificación de colectores (xantatos)
+- Dosificación de espumantes
+- Nivel de espuma y estabilidad
+- Tiempo de residencia efectivo
+
+Para flotación de cobre, un pH elevado (10.5 – 11.5) favorece la selectividad frente a pirita, mientras que en la flotación selectiva de molibdeno se utilizan depresores de cobre como NaHS o Nokes.
+
+Problemas comunes observados en operación:
+- Pérdida de recuperación por exceso de finos (<20 µm)
+- Arrastre mecánico de ganga por espumas inestables
+- Variabilidad en la ley de concentrado por cambios en mineralogía
+
+El control avanzado de flotación suele apoyarse en análisis de tendencias históricas, correlacionando recuperación metalúrgica con variables operacionales y condiciones de alimentación desde molienda.
